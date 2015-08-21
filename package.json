@@ -1,0 +1,26 @@
+{
+  "name": "simple-logger",
+  "version": "1.0.0",
+  "description": "A simple logger",
+  "main": "bin/main.js",
+  "scripts": {
+    "prebuild": "eslint src/*.js",
+    "build": "babel --no-comments --compact -d ./bin src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^1.1.1"
+  },
+  "files": [
+    "bin/main.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@public.git.erdc.dren.mil/rditlmgw/logger.git"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "eslint": "^1.2.1"
+  }
+}
