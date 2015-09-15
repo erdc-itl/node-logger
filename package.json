@@ -4,13 +4,14 @@
   "description": "A simple logger",
   "main": "bin/main.js",
   "scripts": {
-    "prebuild": "eslint src/*.js",
-    "build": "babel --no-comments --compact -d ./bin src"
+    "build": "babel --no-comments --compact -d ./bin src",
+    "prebuild": "eslint src/*.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^1.1.1"
+    "chalk": "^1.1.1",
+    "mkdirp": "^0.5.1"
   },
   "files": [
     "bin/main.js"
