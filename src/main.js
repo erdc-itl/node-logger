@@ -20,6 +20,13 @@ const LEVELS = Object.freeze({
 	error: 40
 });
 
+const SYMBOLS = Object.freeze({
+	verbose: "📢",
+	info: "ℹ️",
+	warning: "⚠️",
+	error: "⛔️"
+});
+
 let logLevel = LEVELS.info;
 const logFilePaths = [ ];
 let logRotateSize = 0;
@@ -109,7 +116,7 @@ class Logger {
 
 	log(msg, level = "info", ...bits) {
 
-		const printMsg = `${ now() } ${ COLORS[level](level) } ${ COLORS.prefix(this.prefix) } ${ msg ? format(msg, ...bits) : "" }`;
+		const printMsg = `${ now() } ${ SYMBOLS[level]}  ${ COLORS[level](level) } ${ COLORS.prefix(this.prefix) } ${ msg ? format(msg, ...bits) : "" }`;
 		if (consoleOutput) {
 			console.log(printMsg);
 		}
