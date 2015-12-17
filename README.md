@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-npm install git+ssh://git@public.git.erdc.dren.mil/rditlmgw/logger.git
+npm install @erdc-itl/simple-logger
 ```
 
 ## Usage
@@ -23,10 +23,10 @@ The only argument to the Logger constructor is the name applied in log messages.
 The above code will result in a log that looks something like this:
 
 ```
-[5 May 2015 14:32:00] verbose training Hello!
-[5 May 2015 14:32:01] info training Information!
-[5 May 2015 14:32:02] warn reporting WARNING!
-[5 May 2015 14:32:03] error reporting IT ALL BROKE!
+[5 May 2015 14:32:00] 📢 verbose training Hello!
+[5 May 2015 14:32:01] ℹ️ info training Information!
+[5 May 2015 14:32:02] ⚠️ warn reporting WARNING!
+[5 May 2015 14:32:03] ⛔️ error reporting IT ALL BROKE!
 ```
 
 Except it'll be colorful.
